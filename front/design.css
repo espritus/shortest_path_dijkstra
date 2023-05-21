@@ -1,0 +1,151 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&family=Oswald:wght@200&display=swap');
+body {
+    background: linear-gradient(#77a2d3, #785dd9);
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1000009em;
+    color: #150303;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .table {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table-header,
+  .table-body {
+    display: table-row-group;
+  }
+  
+  .table-header {
+    text-transform: uppercase;
+  }
+  
+  .table-header .th {
+    font-weight: bold;
+    background-color: #f2f2f2;
+    display: table-cell;
+    padding: 0.4em;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .table-header .th label {
+    display: block;
+    margin-top: 0.7em;
+  }
+  
+  .table-body li {
+    display: table-row;
+    width: 100%;
+  }
+  
+  .table-body .td {
+    border-bottom: 1px solid #ccc;
+    display: table-cell;
+    padding: 0.4em;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    
+  }
+  
+  .table-body .td.metric {
+    border-bottom-color: #efefef;
+    border-top-color: #efefef;
+    background-color: #fff;
+    font-weight: bold;
+  }
+  
+  .table-body .td.metric span {
+    font-size: 2em;
+  }
+  
+  .table-body .td:not(.metric) {
+    font-size: 4em;
+    color: #011306;
+    line-height: 0.5em;
+  }
+  
+  .table-body .td:not(.metric) .number {
+    padding-top: 1em;
+  }
+  
+  .table .percentile-32 {
+    background: #8061a0;
+  }
+  
+  .metric.td {
+    white-space: normal;
+    background: #e5e2e8;
+  }
+
+  
+  .search-result {
+    color: #333;
+    margin: 1em 0;
+    border: 1px solid #100101;
+    width: 90%;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .search-boxen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .benchmarks {
+    width: 100%;
+  }
+  
+  @media (max-width: 600px) {
+    .table .th,
+    .table .td {
+      width: auto;
+      display: block;
+    }
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    background: #adb6c1;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .number {
+    text-align: center;
+  }
+  
+  #myTable {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 26px;
+  }
+  
+ 
+  
+  
