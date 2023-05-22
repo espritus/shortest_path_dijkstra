@@ -54,11 +54,25 @@ func getPaths(c *gin.Context) {
 		PathIndex:        myindex,
 	}
 
+	c.Header("Access-Control-Allow-Origin", "*") // Allow requests from any origin
+	c.Header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
+	c.Header("Access-Control-Allow-Headers", "Content-Type")
 	c.IndentedJSON(http.StatusOK, response)
 }
 
 func main() {
 	router := gin.Default()
+
+
+		// Handle preflight OPTIONS requests
+	router.Use(func(c *gin.Context) {
+		if c.Request.Method == "OPTIONS" {
+			c.Header("Access-Control-Allow-Origin", "*")
+			c.Header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
+			c.Header("Access-Control-Allow-Headers", "Content-Type")
+			c.AbortWithStatus(http.StatusOK)
+		}
+	})
 	router.GET("/shortestpath", getPaths)
 	router.Run("0.0.0.0:8080")
   }

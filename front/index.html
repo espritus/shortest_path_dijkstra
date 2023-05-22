@@ -153,7 +153,43 @@
             <td class="percentile-32"><span class="number">0</span></td>
           </tr>
       </table>
-      <script src="script.js"></script>
-               
+      <form action="/script.js" >
+        <label for="from">From:</label>
+        <select id="frompoints" name="frompoints">
+          <option value="0">Казахский Гос Цирк</option>
+          <option value="1">Казахский Нац Театр Оперы</option>
+          <option value="2">Вознес Каф Собор</option>
+          <option value="3">Центральная мечеть</option>
+          <option value="4">Парк "Достык"</option>
+          <option value="5">Гостиница "Казахстан"</option>
+          <option value="6">Главный Ботанический сад</option>
+          <option value="7">MegaPark</option>
+          <option value="8">Коктобе, телебашня</option>
+          <option value="9">Алматинский зоопарк</option>
+        </select>
+        <br><br>
+        <label for="to" class="toLabel">To:</label>
+        <select id="topoints" name="topoints">
+          <option value="0">Казахский Гос Цирк</option>
+          <option value="1">Казахский Нац Театр Оперы</option>
+          <option value="2">Вознес Каф Собор</option>
+          <option value="3">Центральная мечеть</option>
+          <option value="4">Парк "Достык"</option>
+          <option value="5">Гостиница "Казахстан"</option>
+          <option value="6">Главный Ботанический сад</option>
+          <option value="7">MegaPark</option>
+          <option value="8">Коктобе, телебашня</option>
+          <option value="9">Алматинский зоопарк</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+      </form>
+      <h2 id="paths">
+        
+      </h2>
+      <h2 id="distance">
+        
+      </h2>
+      <script src="script.js"></script>    
 </body>
 </html>
